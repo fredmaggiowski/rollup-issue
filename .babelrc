@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }],
+    ["react-docgen"],
+    ["babel-plugin-react-docgen",
+      {
+        "DOC_GEN_COLLECTION_NAME": "STORYBOOK_REACT_CLASSES",
+        "resolver": "findAllExportedComponentDefinitions",
+        "handlers:": ["react-docgen-deprecation-handler"]
+      },
+      "storybook"
+    ],
+    ["@babel/plugin-proposal-class-properties"],
+    ["@babel/plugin-proposal-json-strings"]
+  ],
+  "presets": [
+    ["@babel/env", {
+      "modules": false
+    }],
+    "@babel/react"
+  ]
+}
