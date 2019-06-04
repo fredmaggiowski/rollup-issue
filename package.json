@@ -1,15 +1,6 @@
 {
-  "name": "reactord",
+  "name": "mylib",
   "version": "1.0.0",
-  "description": "React components designed by mia-platform to develop the Dev Portal",
-  "author": "Mia Platform Core Team <core@mia-platform.eu>",
-  "contributors": [
-    "Federico Maggi <federico.maggi@mia-platform.eu",
-    "Daniele Cinà <daniele.cina@mia-platform.eu",
-    "Davide Bianchi <davide.bianchi@mia-platform.eu"
-  ],
-  "license": "SEE LICENSE IN LICENSE",
-  "repository": "https://git.tools.mia-platform.eu/platform/dev-portal/reactor-design",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
