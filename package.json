@@ -4,9 +4,9 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
-  "typings": "dist/index.d.ts",
+  "typings": "definitions/index",
   "typescript": {
-    "definition": "dist/index.d.ts"
+    "definition": "definitions/index"
   },
   "engines": {
     "node": ">=8",
@@ -78,6 +78,7 @@
     "dist"
   ],
   "dependencies": {
+    "@types/react": "^16.8.19",
     "fast-levenshtein": "^2.0.6",
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1"

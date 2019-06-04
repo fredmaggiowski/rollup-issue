@@ -13,7 +13,7 @@ import typescript from 'rollup-plugin-typescript2'
 import pkg from './package.json'
 
 export default {
-  input: 'src/index.js',
+  input: 'src/index.tsx', // renamed files to .tsx
   output: [
     {
       file: pkg.main,
@@ -34,14 +34,15 @@ export default {
     }),
     url(),
     svgr(),
-    babel({
-      extensions: [
-        ...DEFAULT_EXTENSIONS,
-        'ts'
-      ],
-      exclude: 'node_modules/**',
-      plugins: [ '@babel/external-helpers' ]
-    }),
+    // babel({ // babel will throw an error on types
+    //   extensions: [
+    //     ...DEFAULT_EXTENSIONS,
+    //     'ts',
+    //     'tsx'
+    //   ],
+    //   exclude: 'node_modules/**',
+    //   plugins: [ '@babel/external-helpers' ]
+    // }),
     builtins(),
     resolve(),
     commonjs(),
